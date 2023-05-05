@@ -4,12 +4,12 @@ import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigService } from './config/configuration.service';
 import { ConfigModule } from './config/configuration.module';
-import { AdminModule } from './modules/admin/admin.module';
-import { ClientModule } from './modules/client/client.module';
-import { ClinicModule } from './modules/clinic/clinic.module';
-import { CouponModule } from './modules/coupon/coupon.module';
+import { AdminModule } from './admin/admin.module';
+import { ClientModule } from './client/client.module';
+import { ClinicModule } from './clinic/clinic.module';
+import { CouponModule } from './coupon/coupon.module';
 import { AppMiddleware } from 'src/app.middleware';
-import { StateRegionModule } from 'src/modules/stateregion/state.region.module';
+import { StateRegionModule } from 'src/stateregion/state.region.module';
 
 @Module({
   imports: [
