@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Schema as MongooseSchema } from 'mongoose';
-import { Clinic } from 'src/entities/clinic.model';
+import { Clinic } from 'src/clinic.model';
 
 @Schema()
 export class Doctor extends Document {

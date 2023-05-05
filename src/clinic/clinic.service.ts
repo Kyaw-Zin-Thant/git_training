@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../../dto/getQueryDto';
-import { ClinicRespository } from '../../repositories/clinic.respository';
-import { CreateClinicDto } from './dto/createClinic.dto';
-import { UpdateClinicDto } from './dto/updateClinic.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ClinicRespository } from 'src/clinic.respository';
+import { CreateClinicDto } from 'src/clinic/createClinic.dto';
+import { UpdateClinicDto } from 'src/clinic/updateClinic.dto';
 
 @Injectable()
 export class ClinicService {

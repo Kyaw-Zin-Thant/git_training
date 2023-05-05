@@ -4,10 +4,10 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../../dto/getQueryDto';
-import { AdminRespository } from '../../repositories/admin.respository';
-import { CreateAdminDto } from './dto/createAdmin.dto';
-import { LoginAdminDto } from './dto/loginAdmin.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { AdminRespository } from 'src/admin.respository';
+import { CreateAdminDto } from 'src/admin/createAdmin.dto';
+import { LoginAdminDto } from 'src/admin/loginAdmin.dto';
 import * as jwt from 'jsonwebtoken';
 import * as fs from 'fs';
 const privateKey = fs.readFileSync(
@@ -15,7 +15,7 @@ const privateKey = fs.readFileSync(
   'utf-8',
 );
 import * as bcrypt from 'bcrypt';
-import { UpdateAdminDto } from 'src/modules/admin/dto/updateAdmin.dto';
+import { UpdateAdminDto } from 'src/admin/updateAdmin.dto';
 @Injectable()
 export class AdminService {
   constructor(private readonly adminRespository: AdminRespository) {}

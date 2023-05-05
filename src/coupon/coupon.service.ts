@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../../dto/getQueryDto';
-import { CreateCouponDto } from './dto/createCoupon.dto';
-import { UpdateCouponDto } from './dto/updateCoupon.dto';
-import { CouponRespository } from 'src/repositories/coupon.respository';
-import { GeneateCouponDto } from './dto/generateCoupon.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { CreateCouponDto } from 'src/coupon/createCoupon.dto';
+import { UpdateCouponDto } from 'src/coupon/updateCoupon.dto';
+import { CouponRespository } from 'src/coupon.respository';
+import { GeneateCouponDto } from 'src/coupon/generateCoupon.dto';
 
 @Injectable()
 export class CouponService {

@@ -1,10 +1,10 @@
 import { InternalServerErrorException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { GetQueryDto } from '../dto/getQueryDto';
-import { ResponseDto } from '../dto/response.dto';
-import { Region } from '../entities/region.model';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ResponseDto } from 'src/response.dto';
+import { Region } from 'src/region.model';
 import { Model, Types } from 'mongoose';
-import { State } from 'src/entities/state.model';
+import { State } from 'src/state.model';
 import * as fs from 'fs';
 
 export class StateRegionRespository {

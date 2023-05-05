@@ -4,11 +4,11 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../dto/getQueryDto';
-import { ResponseDto } from '../dto/response.dto';
-import { User } from '../entities/user.model';
-import { CreateAdminDto } from 'src/modules/admin/dto/createAdmin.dto';
-import { UpdateAdminDto } from 'src/modules/admin/dto/updateAdmin.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ResponseDto } from 'src/response.dto';
+import { User } from 'src/user.model';
+import { CreateAdminDto } from 'src/admin/createAdmin.dto';
+import { UpdateAdminDto } from 'src/admin/updateAdmin.dto';
 
 export class AdminRespository {
   constructor(

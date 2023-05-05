@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import * as bcrypt from 'bcrypt';
-import { User, UserSchema } from '../../entities/user.model';
-import { AdminController } from './admin.controller';
-import { AdminService } from './admin.service';
-import { AdminRespository } from 'src/repositories/admin.respository';
+import { User, UserSchema } from 'src/user.model';
+import { AdminController } from 'src/admin/admin.controller';
+import { AdminService } from 'src/admin/admin.service';
+import { AdminRespository } from 'src/admin.respository';
 @Module({
   imports: [
     MongooseModule.forFeatureAsync([

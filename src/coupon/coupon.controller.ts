@@ -13,11 +13,11 @@ import {
 import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection } from 'mongoose';
-import { GetQueryDto } from '../../dto/getQueryDto';
-import { CreateCouponDto } from './dto/createCoupon.dto';
-import { UpdateCouponDto } from './dto/updateCoupon.dto';
-import { CouponService } from './coupon.service';
-import { GeneateCouponDto } from './dto/generateCoupon.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { CreateCouponDto } from 'src/coupon/createCoupon.dto';
+import { UpdateCouponDto } from 'src/coupon/updateCoupon.dto';
+import { CouponService } from 'src/coupon/coupon.service';
+import { GeneateCouponDto } from 'src/coupon/generateCoupon.dto';
 
 @Controller('coupon')
 export class CouponController {

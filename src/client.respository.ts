@@ -5,11 +5,11 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../dto/getQueryDto';
-import { ResponseDto } from '../dto/response.dto';
-import { Client } from '../entities/client.model';
-import { CreateClientDto } from 'src/modules/client/dto/createClient.dto';
-import { UpdateClientDto } from 'src/modules/client/dto/updateClient.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ResponseDto } from 'src/response.dto';
+import { Client } from 'src/client.model';
+import { CreateClientDto } from 'src/client/createClient.dto';
+import { UpdateClientDto } from 'src/client/updateClient.dto';
 
 export class ClientRespository {
   constructor(

@@ -4,13 +4,13 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Types } from 'mongoose';
-import { GetQueryDto } from '../dto/getQueryDto';
-import { ResponseDto } from '../dto/response.dto';
-import { CreateCouponDto } from 'src/modules/coupon/dto/createCoupon.dto';
-import { UpdateCouponDto } from 'src/modules/coupon/dto/updateCoupon.dto';
-import { CouponFamily } from 'src/entities/coupon.family.model';
-import { GeneateCouponDto } from 'src/modules/coupon/dto/generateCoupon.dto';
-import { Coupon } from 'src/entities/coupon.model';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ResponseDto } from 'src/response.dto';
+import { CreateCouponDto } from 'src/coupon/createCoupon.dto';
+import { UpdateCouponDto } from 'src/coupon/updateCoupon.dto';
+import { CouponFamily } from 'src/coupon.family.model';
+import { GeneateCouponDto } from 'src/coupon/generateCoupon.dto';
+import { Coupon } from 'src/coupon.model';
 import * as voucher_codes from 'voucher-code-generator';
 
 export class CouponRespository {

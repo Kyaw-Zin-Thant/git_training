@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { GetQueryDto } from '../../dto/getQueryDto';
-import { StateRegionRespository } from '../../repositories/stateregion.respository';
+import { GetQueryDto } from 'src/getQueryDto';
+import { StateRegionRespository } from 'src/stateregion.respository';
 @Injectable()
 export class StateRegionService {
   constructor(

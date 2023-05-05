@@ -5,13 +5,13 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from '../dto/getQueryDto';
-import { ResponseDto } from '../dto/response.dto';
-import { Clinic } from '../entities/clinic.model';
-import { CreateClinicDto } from 'src/modules/clinic/dto/createClinic.dto';
-import { UpdateClinicDto } from 'src/modules/clinic/dto/updateClinic.dto';
-import { Doctor } from 'src/entities/doctor.model';
-import { DoctorDto } from 'src/modules/clinic/dto/doctor.dto';
+import { GetQueryDto } from 'src/getQueryDto';
+import { ResponseDto } from 'src/response.dto';
+import { Clinic } from 'src/clinic.model';
+import { CreateClinicDto } from 'src/clinic/createClinic.dto';
+import { UpdateClinicDto } from 'src/clinic/updateClinic.dto';
+import { Doctor } from 'src/doctor.model';
+import { DoctorDto } from 'src/clinic/doctor.dto';
 
 export class ClinicRespository {
   constructor(

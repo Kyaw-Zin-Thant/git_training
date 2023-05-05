@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { ClinicController } from './clinic.controller';
-import { ClinicService } from './clinic.service';
-import { ClinicRespository } from 'src/repositories/clinic.respository';
-import { Clinic, ClinicSchema } from 'src/entities/clinic.model';
-import { Doctor, DoctorSchema } from 'src/entities/doctor.model';
+import { ClinicController } from 'src/clinic/clinic.controller';
+import { ClinicService } from 'src/clinic/clinic.service';
+import { ClinicRespository } from 'src/clinic.respository';
+import { Clinic, ClinicSchema } from 'src/clinic.model';
+import { Doctor, DoctorSchema } from 'src/doctor.model';
 
 @Module({
   imports: [
