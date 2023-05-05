@@ -1,38 +1,21 @@
-import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UsersModule } from './users/users.module';
 import { MongooseModule } from '@nestjs/mongoose';
-import { ConfigService } from './config/configuration.service';
-import { ConfigModule } from './config/configuration.module';
-import { AdminModule } from './modules/admin/admin.module';
-import { ClientModule } from './modules/client/client.module';
-import { ClinicModule } from './modules/clinic/clinic.module';
-import { CouponModule } from './modules/coupon/coupon.module';
-import { AppMiddleware } from 'src/app.middleware';
-import { StateRegionModule } from 'src/modules/stateregion/state.region.module';
+import { AuthModule } from './auth/auth.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule,
-    MongooseModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: async (configService: ConfigService) =>
-        configService.getMongoConfig(),
-    }),
-    AdminModule,
-    ClientModule,
-    ClinicModule,
-    CouponModule,
-    StateRegionModule,
+    UsersModule,
+    AuthModule,
+    MongooseModule.forRoot(
+      'mongodb+srv://leduc1901:melody19@kylecluster.abjzu.mongodb.net/?retryWrites=true&w=majority',
+    ),
+    ConfigModule.forRoot(),
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {
-  configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply(AppMiddleware)
-      .exclude('admin/login')
-      .forRoutes({ path: '*', method: RequestMethod.ALL }); // apply on all routes
-  }
-}
+export class AppModule {}
