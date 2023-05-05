@@ -2,14 +2,14 @@ import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { ConfigService } from 'src/config/configuration.service';
-import { ConfigModule } from 'src/config/configuration.module';
-import { AdminModule } from 'src/admin/admin.module';
-import { ClientModule } from 'src/client/client.module';
-import { ClinicModule } from 'src/clinic/clinic.module';
-import { CouponModule } from 'src/coupon/coupon.module';
+import { ConfigService } from './config/configuration.service';
+import { ConfigModule } from './config/configuration.module';
+import { AdminModule } from './admin/admin.module';
+import { ClientModule } from './client/client.module';
+import { ClinicModule } from './clinic/clinic.module';
+import { CouponModule } from './coupon/coupon.module';
 import { AppMiddleware } from './app.middleware';
-import { StateRegionModule } from 'src/stateregion/state.region.module';
+import { StateRegionModule } from './stateregion/state.region.module';
 
 @Module({
   imports: [
