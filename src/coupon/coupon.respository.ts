@@ -8,9 +8,9 @@ import { GetQueryDto } from 'src/getQueryDto';
 import { ResponseDto } from 'src/response.dto';
 import { CreateCouponDto } from 'src/coupon/createCoupon.dto';
 import { UpdateCouponDto } from 'src/coupon/updateCoupon.dto';
-import { CouponFamily } from 'src/coupon.family.model';
+import { CouponFamily } from './coupon.family.model';
 import { GeneateCouponDto } from 'src/coupon/generateCoupon.dto';
-import { Coupon } from 'src/coupon.model';
+import { Coupon } from './coupon.model';
 import * as voucher_codes from 'voucher-code-generator';
 
 export class CouponRespository {

@@ -3,7 +3,7 @@ import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
-import { StateRegionService } from 'src/stateregion/state.region.service';
+import { StateRegionService } from './state.region.service';
 @Controller('region')
 export class StateRegionController {
   constructor(

@@ -14,9 +14,9 @@ import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection, Schema as MongooseSchema } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
-import { CreateClientDto } from 'src/client/createClient.dto';
-import { UpdateClientDto } from 'src/client/updateClient.dto';
-import { ClientService } from 'src/client/client.service';
+import { CreateClientDto } from './createClient.dto';
+import { UpdateClientDto } from './updateClient.dto';
+import { ClientService } from './client.service';
 
 @Controller('client')
 export class ClientController {

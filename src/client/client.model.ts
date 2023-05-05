@@ -1,8 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Schema as MongooseSchema } from 'mongoose';
-import { Coupon } from './coupon.model';
-import { Region } from './region.model';
-import { State } from './state.model';
+import { Coupon } from 'src/coupon/coupon.model';
+import { Region } from 'src/stateregion/region.model';
+import { State } from 'src/stateregion/state.model';
 
 @Schema()
 export class Client extends Document {

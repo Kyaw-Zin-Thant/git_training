@@ -3,11 +3,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import {
   CouponFamily,
   CouponFamilySchema,
-} from 'src/coupon.family.model';
-import { CouponRespository } from 'src/coupon.respository';
-import { CouponController } from 'src/coupon/coupon.controller';
-import { CouponService } from 'src/coupon/coupon.service';
-import { Coupon, CouponSchema } from 'src/coupon.model';
+} from './coupon.family.model';
+import { CouponRespository } from './coupon.respository';
+import { CouponController } from './coupon.controller';
+import { CouponService } from './coupon.service';
+import { Coupon, CouponSchema } from './coupon.model';
 
 @Module({
   imports: [

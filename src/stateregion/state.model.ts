@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Schema as MongooseSchema } from 'mongoose';
-import { Region } from 'src/region.model';
+import { Region } from './region.model';
 
 enum Status {
   ACTIVE,

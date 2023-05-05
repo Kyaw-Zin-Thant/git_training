@@ -7,9 +7,9 @@ import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
 import { ResponseDto } from 'src/response.dto';
-import { Client } from 'src/client.model';
-import { CreateClientDto } from 'src/client/createClient.dto';
-import { UpdateClientDto } from 'src/client/updateClient.dto';
+import { Client } from './client.model';
+import { CreateClientDto } from './createClient.dto';
+import { UpdateClientDto } from './updateClient.dto';
 
 export class ClientRespository {
   constructor(

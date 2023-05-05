@@ -14,10 +14,10 @@ import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
-import { CreateCouponDto } from 'src/coupon/createCoupon.dto';
-import { UpdateCouponDto } from 'src/coupon/updateCoupon.dto';
-import { CouponService } from 'src/coupon/coupon.service';
-import { GeneateCouponDto } from 'src/coupon/generateCoupon.dto';
+import { CreateCouponDto } from './createCoupon.dto';
+import { UpdateCouponDto } from './updateCoupon.dto';
+import { CouponService } from './coupon.service';
+import { GeneateCouponDto } from './generateCoupon.dto';
 
 @Controller('coupon')
 export class CouponController {

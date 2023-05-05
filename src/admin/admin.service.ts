@@ -5,9 +5,9 @@ import {
 } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
-import { AdminRespository } from 'src/admin.respository';
-import { CreateAdminDto } from 'src/admin/createAdmin.dto';
-import { LoginAdminDto } from 'src/admin/loginAdmin.dto';
+import { AdminRespository } from './admin.respository';
+import { CreateAdminDto } from './createAdmin.dto';
+import { LoginAdminDto } from './loginAdmin.dto';
 import * as jwt from 'jsonwebtoken';
 import * as fs from 'fs';
 const privateKey = fs.readFileSync(
@@ -15,7 +15,7 @@ const privateKey = fs.readFileSync(
   'utf-8',
 );
 import * as bcrypt from 'bcrypt';
-import { UpdateAdminDto } from 'src/admin/updateAdmin.dto';
+import { UpdateAdminDto } from './updateAdmin.dto';
 @Injectable()
 export class AdminService {
   constructor(private readonly adminRespository: AdminRespository) {}

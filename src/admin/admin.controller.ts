@@ -14,10 +14,10 @@ import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection, Schema as MongooseSchema } from 'mongoose';
 import { GetQueryDto } from 'src/getQueryDto';
-import { CreateAdminDto } from 'src/admin/createAdmin.dto';
-import { AdminService } from 'src/admin/admin.service';
-import { LoginAdminDto } from 'src/admin/loginAdmin.dto';
-import { UpdateAdminDto } from 'src/admin/updateAdmin.dto';
+import { CreateAdminDto } from './createAdmin.dto';
+import { AdminService } from './admin.service';
+import { LoginAdminDto } from './loginAdmin.dto';
+import { UpdateAdminDto } from './updateAdmin.dto';
 @Controller('admin')
 export class AdminController {
   constructor(
