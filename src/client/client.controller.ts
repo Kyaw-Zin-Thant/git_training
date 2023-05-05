@@ -13,7 +13,7 @@ import {
 import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { CreateClientDto } from './createClient.dto';
 import { UpdateClientDto } from './updateClient.dto';
 import { ClientService } from './client.service';

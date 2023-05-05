@@ -2,7 +2,7 @@ import { Controller, Get, HttpStatus, Param, Query, Res } from '@nestjs/common';
 import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { StateRegionService } from './state.region.service';
 @Controller('region')
 export class StateRegionController {

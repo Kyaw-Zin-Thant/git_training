@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { ClinicRespository } from './clinic.respository';
 import { CreateClinicDto } from './createClinic.dto';
 import { UpdateClinicDto } from './updateClinic.dto';

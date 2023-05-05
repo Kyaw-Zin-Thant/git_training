@@ -4,7 +4,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { AdminRespository } from './admin.respository';
 import { CreateAdminDto } from './createAdmin.dto';
 import { LoginAdminDto } from './loginAdmin.dto';

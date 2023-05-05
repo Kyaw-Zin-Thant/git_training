@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { ClientSession, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { CreateCouponDto } from './createCoupon.dto';
 import { UpdateCouponDto } from './updateCoupon.dto';
 import { CouponRespository } from './coupon.respository';

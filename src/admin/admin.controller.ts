@@ -13,7 +13,7 @@ import {
 import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
+import { GetQueryDto } from '../getQueryDto';
 import { CreateAdminDto } from './createAdmin.dto';
 import { AdminService } from './admin.service';
 import { LoginAdminDto } from './loginAdmin.dto';

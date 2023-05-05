@@ -13,10 +13,10 @@ import {
 import { InjectConnection } from '@nestjs/mongoose';
 import { Response } from 'express';
 import { Connection, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
-import { CreateClinicDto } from 'src/clinic/createClinic.dto';
-import { UpdateClinicDto } from 'src/clinic/updateClinic.dto';
-import { ClinicService } from 'src/clinic/clinic.service';
+import { GetQueryDto } from '../getQueryDto';
+import { CreateClinicDto } from '../clinic/createClinic.dto';
+import { UpdateClinicDto } from '../clinic/updateClinic.dto';
+import { ClinicService } from '../clinic/clinic.service';
 
 @Controller('clinic')
 export class ClinicController {

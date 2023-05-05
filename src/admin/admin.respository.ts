@@ -4,8 +4,8 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
-import { ResponseDto } from 'src/response.dto';
+import { GetQueryDto } from '../getQueryDto';
+import { ResponseDto } from '../response.dto';
 import { User } from './user.model';
 import { CreateAdminDto } from './createAdmin.dto';
 import { UpdateAdminDto } from './updateAdmin.dto';
