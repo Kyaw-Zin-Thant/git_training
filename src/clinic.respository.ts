@@ -5,12 +5,12 @@ import {
 } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { ClientSession, Model, Schema as MongooseSchema } from 'mongoose';
-import { GetQueryDto } from 'src/getQueryDto';
-import { ResponseDto } from 'src/response.dto';
-import { Clinic } from 'src/clinic.model';
+import { GetQueryDto } from './getQueryDto';
+import { ResponseDto } from './response.dto';
+import { Clinic } from './clinic.model';
 import { CreateClinicDto } from 'src/clinic/createClinic.dto';
 import { UpdateClinicDto } from 'src/clinic/updateClinic.dto';
-import { Doctor } from 'src/doctor.model';
+import { Doctor } from './doctor.model';
 import { DoctorDto } from 'src/clinic/doctor.dto';
 
 export class ClinicRespository {

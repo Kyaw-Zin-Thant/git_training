@@ -1,8 +1,8 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Schema as MongooseSchema } from 'mongoose';
-import { CouponFamily } from 'src/coupon.family.model';
-import { Clinic } from 'src/clinic.model';
-import { Client } from 'src/client.model';
+import { CouponFamily } from './coupon.family.model';
+import { Clinic } from './clinic.model';
+import { Client } from './client.model';
 enum Status {
   'ACTIVE',
   'INACTIVE',

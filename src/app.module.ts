@@ -1,6 +1,6 @@
 import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
-import { AppController } from 'src/app.controller';
-import { AppService } from 'src/app.service';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigService } from 'src/config/configuration.service';
 import { ConfigModule } from 'src/config/configuration.module';
@@ -8,7 +8,7 @@ import { AdminModule } from 'src/admin/admin.module';
 import { ClientModule } from 'src/client/client.module';
 import { ClinicModule } from 'src/clinic/clinic.module';
 import { CouponModule } from 'src/coupon/coupon.module';
-import { AppMiddleware } from 'src/app.middleware';
+import { AppMiddleware } from './app.middleware';
 import { StateRegionModule } from 'src/stateregion/state.region.module';
 
 @Module({
